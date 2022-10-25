@@ -36,12 +36,12 @@ function Newalbum(props) {
   return (
     <div className="Album">
       <h1 id="albumHeading" className="mt-4">
-        Add Album To Your List
+          𝘼𝙙𝙙 𝘼𝙡𝙗𝙪𝙢 𝙏𝙤 𝙔𝙤𝙪𝙧 𝙇𝙞𝙨𝙩
       </h1>
 
       <Form>
         <Form.Group className="mb-3" controlId="Title">
-          <Form.Label>Title</Form.Label>
+          <Form.Label>𝑻𝒊𝒕𝒍𝒆</Form.Label>
           <Form.Control
             type="text"
             placeholder="Title"
@@ -52,7 +52,7 @@ function Newalbum(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="Id">
-          <Form.Label>Id</Form.Label>
+          <Form.Label>𝗜𝗱</Form.Label>
           <Form.Control
             type="number"
             placeholder="ID"
@@ -63,7 +63,7 @@ function Newalbum(props) {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="Title">
-          <Form.Label>UserID</Form.Label>
+          <Form.Label>𝙐𝙨𝙚𝙧𝙄𝘿</Form.Label>
           <Form.Control
             type="text"
             placeholder="UserID"
@@ -74,7 +74,7 @@ function Newalbum(props) {
           />
         </Form.Group>
         <Button variant="primary" type="submit" onClick={saveUser}>
-          Add To Album
+            𝑨𝒅𝒅 𝑻𝒐 𝑨𝒍𝒃𝒖𝒎
         </Button>
       </Form>
     </div>

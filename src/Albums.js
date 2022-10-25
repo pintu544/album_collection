@@ -39,7 +39,7 @@ const Albums = (props) => {
                 style={{ color: "white", textDecoration: "none" }}
                 to={`/album/${album.id}`}
               >
-                Update
+                  𝔘𝔭𝔡𝔞𝔱𝔢
               </Link>
             </Button>
             <Button
@@ -48,7 +48,7 @@ const Albums = (props) => {
               onClick={() => deleteUser(album.id)}
               className='mb-4'
             >
-              Delete
+                ᴰᵉˡᵉᵗᵉ
             </Button>
           </td>
         </tr>
@@ -69,11 +69,11 @@ const Albums = (props) => {
       <Table striped bordered hover variant='dark'>
         <thead>
           <tr>
-            <th className='text-center'>No.</th>
+            <th className='text-center'>𝐒𝐍</th>
             <th className='text-center' colSpan='2'>
-              Album Name
+                𝘼𝙡𝙗𝙪𝙢 𝙉𝙖𝙢𝙚
             </th>
-            <th className='text-center'>Actions</th>
+            <th className='text-center'>𝘈𝘤𝘵𝘪𝘰𝘯𝘴</th>
           </tr>
         </thead>
         <tbody>{mappedAlbum.length > 0 ? mappedAlbum : emptyAlbum}</tbody>

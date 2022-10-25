@@ -10,7 +10,7 @@ export default function UpdateAlbum(props) {
   let [userId, setUserId] = useState(album.userId);
 /// we are using the code in this file to update the albums 
   useEffect(() => {
-    let album = albums.find((elem) => elem.id == id);
+    let album = albums.find((elem) => elem.id === id);
     setAlbum(album);
     setTitle(album.title);
     setUserId(album.userId);
@@ -32,7 +32,7 @@ export default function UpdateAlbum(props) {
       .then((data) => {
         let updatedAlbums = albums.filter((album) => {
           console.log(album);
-          return album.id != id;
+          return album.id !== id;
         });
         updatedAlbums.push(data);
         handleChangeAlbum(updatedAlbums);
@@ -49,7 +49,7 @@ export default function UpdateAlbum(props) {
 
   return (
     <div>
-      <label htmlFor='title'>Title</label>
+      <label htmlFor='title'>𝑻𝒊𝒕𝒍𝒆</label>
       <input
         type='text'
         value={title}
@@ -67,7 +67,7 @@ export default function UpdateAlbum(props) {
           handleChange(e);
         }}
       />
-      <Button onClick={updateUser}> Submit</Button>
+      <Button onClick={updateUser}> 𝐒𝐮𝐛𝐦𝐢𝐭</Button>
     </div>
   );
 }
